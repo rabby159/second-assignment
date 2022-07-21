@@ -1,11 +1,13 @@
 /* font design  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* menu design */
+/* body design */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: rgb(178, 224, 209);
 }
+
+/* Header file CSS  */
 .container{
     background-color: black;
     width: 90%;
@@ -53,7 +55,7 @@ body{
     padding-top: 33px;
 }
 
-/* navigation design  */
+/* Menu and Card design  */
 .menu-container{
     display: flex;
     width: 100%;
@@ -119,7 +121,9 @@ body{
     display: flex;
     gap: 20px;
 }
+/* button only tablet view  */
 .view{
+    display: none;
     font-size: 20px;
     background-color: #DD0000;
     padding-left: 15px;
@@ -130,6 +134,7 @@ body{
     border: 2px solid rgb(223, 10, 10);
     border-radius: 5px;
 }
+/* footer css design  */
 .footer-section{
     padding-top: 20px;
 }
@@ -167,8 +172,10 @@ li:hover{
     padding-top: 20px;
     font-size: 30px;
 }
-/* media quary */
-@media only screen and (max-width: 820px) {
+
+
+/* media query tablet phone */
+@media only screen and (max-width: 1100px) {
     .header-tittle{
         font-size: 35px;
     }
@@ -190,3 +197,56 @@ li:hover{
         margin-left: 280px;
     }
  }
+@media only screen and (max-width: 820px) {
+    .header-tittle{
+        font-size: 35px;
+    }
+    .menu-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cards{
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
+    .card{
+        width: 46%;
+    }
+    .menu{
+        margin-left: 280px;
+    }
+    .view{
+        display: block;
+    }
+ }
+ @media only screen and (max-width: 500px){
+    .header-file{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-tittle{
+        font-size: 40px;
+    }
+    .menu-container{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+    .card{
+        width: 75%;
+    }
+    .menu{
+        margin-left: 70px;
+    }
+    .view{
+        display: none;
+    }
+    .footer-tab ul{
+
+        flex-direction: column;
+    }
+ }
+
+ /* <!-- Thank You  --> */
