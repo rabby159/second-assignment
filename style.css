@@ -1,19 +1,20 @@
 /* font design  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+/* menu design */
 body{
-    width: 65%;
     font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
     background-color: rgb(178, 224, 209);
 }
 .container{
     background-color: black;
-    width: 1321px;
-    height: 646px;
+    width: 90%;
+    margin-left: 3%;
     padding-left: 100px;
     border-radius: 40px;
     margin-top: 50px;
+    margin-bottom: 100px;
+    
 }
 .header-file{
     display: grid;
@@ -23,7 +24,7 @@ body{
 }
 .header-details{
     width: 75%;
-    padding: 24px;
+    padding: 15px 15px 20px 20px;
 }
 .header-tittle{
     color: white;
@@ -50,4 +51,105 @@ body{
     width: 80%;
     padding-left: 5px;
     padding-top: 33px;
+}
+
+/* navigation design  */
+.menu-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.menu{
+    background-color: black;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+.menu-cart{
+    justify-content: center;
+    text-align: center;
+    padding: 15px 20px;
+    margin-left: 20px;
+}
+.menu-cart a:hover{
+    background-color: rgb(255, 9, 9);
+}
+.menu-cart a{
+    color: black;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    display: block;
+    padding-top: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+} 
+.cards{
+    display: flex;
+    margin-left: 25px;
+    width: 75%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+.card{
+    width: 30%;
+}
+.card-blog img{
+    width: 100%;
+}
+.card-details a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(247, 240, 240);
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px 24px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.card-info{
+    display: flex;
+    gap: 20px;
+}
+.footer-section{
+    padding-top: 20px;
+}
+
+footer{
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+hr{
+    width: 70%;
+    color: gray;
+}
+.footer-tab ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+li{
+    list-style: none;
+    margin-right: 15px;
+    padding: 0px 15px;
+}
+li:hover{
+    background-color: burlywood;
+}
+.footer-icon{
+    padding-top: 20px;
+    font-size: 30px;
 }
